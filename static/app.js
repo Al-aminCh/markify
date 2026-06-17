@@ -10,7 +10,7 @@
     // When deploying frontend on Netlify and backend on Render,
     // set this to your Render backend URL, e.g.: 'https://markify-api.onrender.com'
     // For local development, leave as empty string (same origin).
-    const API_BASE = '';
+    const API_BASE = 'https://markify-enpq.onrender.com';
 
     // --- DOM Elements ---
     const themeToggle = document.getElementById('themeToggle');
