@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: markify
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars: []
