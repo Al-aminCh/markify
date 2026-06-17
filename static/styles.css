@@ -249,6 +249,37 @@ a:hover {
     font-weight: 600;
 }
 
+/* --- Notice Banner --- */
+.notice-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background: var(--accent-light);
+    color: var(--text-primary);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: var(--shadow-sm);
+}
+
+.notice-banner svg {
+    flex-shrink: 0;
+    color: var(--accent);
+    margin-top: 2px;
+}
+
+.notice-banner strong {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+[data-theme="dark"] .notice-banner {
+    background: rgba(59, 130, 246, 0.1);
+}
+
 /* --- Tab Switcher --- */
 .tab-switcher {
     display: flex;
