@@ -116,7 +116,7 @@ a:hover {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 24px;
-    height: 64px;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -187,7 +187,7 @@ a:hover {
 /* --- Hero --- */
 .hero {
     text-align: center;
-    padding: 32px 0 24px;
+    padding: 16px 0 16px;
 }
 
 .hero-title {
@@ -203,11 +203,11 @@ a:hover {
 }
 
 .hero-subtitle {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-secondary);
     max-width: 100%;
-    margin: 0 auto 16px;
-    line-height: 1.7;
+    margin: 0 auto 12px;
+    line-height: 1.6;
 }
 
 .hero-benefits {
@@ -254,13 +254,13 @@ a:hover {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    padding: 12px 16px;
+    padding: 10px 14px;
     background: var(--accent-light);
     color: var(--text-primary);
     border-left: 4px solid var(--accent);
     border-radius: var(--radius-sm);
-    margin-bottom: 16px;
-    font-size: 14px;
+    margin-bottom: 12px;
+    font-size: 13px;
     line-height: 1.5;
     box-shadow: var(--shadow-sm);
 }
@@ -288,7 +288,7 @@ a:hover {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     transition: background-color var(--transition), border-color var(--transition);
 }
 
@@ -334,7 +334,7 @@ a:hover {
     position: relative;
     border: 2px dashed var(--border-color);
     border-radius: var(--radius-lg);
-    padding: 48px 24px;
+    padding: 32px 24px;
     text-align: center;
     cursor: pointer;
     transition: all var(--transition);
@@ -386,7 +386,7 @@ a:hover {
 
 .dropzone-icon {
     color: var(--text-tertiary);
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     transition: color var(--transition);
 }
 
@@ -404,7 +404,7 @@ a:hover {
 .dropzone-hint {
     font-size: 14px;
     color: var(--text-secondary);
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .dropzone-browse {
