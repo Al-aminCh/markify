@@ -179,6 +179,10 @@
 
         showLoading();
 
+        if (typeof gtag === 'function') {
+            gtag('event', 'convert_file', { 'method': 'upload' });
+        }
+
         const formData = new FormData();
         formData.append('file', selectedFile);
 
@@ -206,6 +210,10 @@
         if (!url) return;
 
         showLoading();
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'convert_file', { 'method': 'url' });
+        }
 
         const formData = new FormData();
         formData.append('url', url);
@@ -302,6 +310,11 @@
 
         try {
             await navigator.clipboard.writeText(currentMarkdown);
+
+            if (typeof gtag === 'function') {
+                gtag('event', 'copy_markdown');
+            }
+
             // Visual feedback
             const originalHTML = copyBtn.innerHTML;
             copyBtn.innerHTML = `
@@ -323,6 +336,10 @@
     // --- Download ---
     downloadBtn.addEventListener('click', () => {
         if (!currentMarkdown) return;
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'download_markdown');
+        }
 
         // Generate filename - keep original name but change extension to .md
         let name = currentFilename;
@@ -361,6 +378,11 @@
 
             try {
                 await navigator.clipboard.writeText(currentMarkdown);
+
+                if (typeof gtag === 'function') {
+                    gtag('event', 'share_to_ai', { 'platform': platform });
+                }
+
                 showToast(`Markdown copied! Paste it in ${btn.querySelector('span').textContent}.`);
                 // Open platform in new tab
                 setTimeout(() => {
